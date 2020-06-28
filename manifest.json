@@ -1,27 +1,26 @@
 {
     "content_scripts": [
         {
-            "js": [
-                "content.js"
-            ],
             "matches": [
                 "<all_urls>"
+            ],
+            "js": [
+                "content.js"
             ]
         }
     ],
-    "manifest_version": 2,
     "version": "1.0",
-    "permissions": [
-        "tabs"
-    ],
-    "name": "count word new tab",
-    "browser_action": {
-        // "default_popup": "popup.html",
-        "default_title": "Ishan Counter"
-    },
     "background": {
         "scripts": [
             "background.js"
         ]
-    }
+    },
+    "manifest_version": 2,
+    "permissions": [
+        "tabs"
+    ],
+    "browser_action": {
+        "default_title": "Ishan Counter"
+    },
+    "name": "count word new tab"
 }
